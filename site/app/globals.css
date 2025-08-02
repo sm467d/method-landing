@@ -2,8 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+/* Supreme Font */
+@font-face {
+  font-family: 'Supreme';
+  src: url('/fonts/Supreme-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Supreme';
+  src: url('/fonts/Supreme-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Supreme';
+  src: url('/fonts/Supreme-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Supreme';
+  src: url('/fonts/Supreme-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
 
 /* ClashDisplay Font */
 @font-face {
@@ -38,57 +68,6 @@
   font-display: swap;
 }
 
-/* Satoshi Variable Font */
-@font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Variable.woff2') format('woff2');
-  font-weight: 300 900;
-  font-display: swap;
-  font-style: normal;
-}
-
-/* Satoshi Static Fonts as fallback */
-@font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi-Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-
 @layer base {
   :root {
     --background: 222.2 84% 4.9%;
@@ -114,16 +93,15 @@
   }
 }
 
-
-
 @layer base {
   * {
     @apply border-slate-700;
-    font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
+    font-family: 'Supreme', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
   }
   body {
     background-color: #121212 !important;
     color: white;
+    font-family: 'Supreme', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
   }
   html {
     background-color: #121212;
@@ -133,24 +111,4 @@
     font-family: 'ClashDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !important;
     font-weight: 400;
   }
-}
-
-
-/* Satoshi for hero text */
-.font-satoshi, .font-satoshi * {
-  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, system-ui, sans-serif !important;
-}
-
-h1.font-satoshi {
-  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, system-ui, sans-serif !important;
-}
-
-/* Custom animations */
-@keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
-.animate-shimmer {
-  animation: shimmer 2s infinite;
 }

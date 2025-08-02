@@ -22,7 +22,7 @@ export default function Home() {
         
         {/* Subtitle */}
         <p className="text-xl text-gray-300 leading-relaxed mb-12 max-w-2xl mx-auto">
-          Master the message. Join the waitlist.
+          Master the message.
         </p>
 
         {/* CTA Button */}
